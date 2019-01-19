@@ -1,10 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Kalkulator punktów rekrutacyjnych</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+    <div class="container">
 
+        <h1 class="title">Kalkulator punktów rekrutacyjnych</h1>
+
+        <form method="get" class="pointsForm" name="pointsForm">
+            <div class="pointsForm__inputGroup">
+                <label for="punktyMaturaPodstawowa">Matura podstawowa: </label>
+                <input type="number" class="pointsForm__input" id="punktyMaturaPodstawowa" name="punktyMaturaPodstawowa" value="punktyMaturaPodstawowa" min="0" max="100" placeholder="Ilość %" required>
+            </div>
+
+            <div class="pointsForm__inputGroup">
+                <label for="punktyMaturaPodstawowa">Matura rozszerzona: </label>
+                <input type="number" class="pointsForm__input" id="punktyMaturaRozszerzona" name="punktyMaturaRozszerzona" value="punktyMaturaRozszerzona" min="0" max="100" placeholder="Ilość %">
+            </div>
+            
+            <div class="pointsForm__inputGroup">
+                <p class="pointsForm__universityName">Nazwa uczelni:</p>
+                <div class="inputGroup__radioButton">
+                    <input type="radio" id="agh" class="radioButton__input pointsForm__input" value="agh" name="university">
+                    <label for="agh">AGH</label>
+                </div>
+                <div class="inputGroup__radioButton">
+                    <input type="radio" id="politechnika" class="radioButton__input pointsForm__input" value="pk" name="university">
+                    <label for="politechnika">Politechnika Krakowska</label>
+                </div>
+            </div>
+
+            <button type="submit" class="pointsForm__button">Sprawdź</button>
+        </form>
+    </div>
 </body>
 </html>
