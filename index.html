@@ -10,31 +10,23 @@
 
         <h1 class="title">Kalkulator punktów rekrutacyjnych</h1>
 
-        <form method="get" class="pointsForm" name="pointsForm">
-            <div class="pointsForm__inputGroup">
+        <form method="get" class="points-form" name="points">
+            <div class="points-form__input-group">
                 <label for="punktyMaturaPodstawowa">Matura podstawowa: </label>
-                <input type="number" class="pointsForm__input" id="punktyMaturaPodstawowa" name="punktyMaturaPodstawowa" value="punktyMaturaPodstawowa" min="0" max="100" placeholder="Ilość %" required>
+                <input type="number" class="points-form__input" id="punktyMaturaPodstawowa" name="punktyMaturaPodstawowa" min="0" max="100" placeholder="Ilość %" required>
             </div>
 
-            <div class="pointsForm__inputGroup">
+            <div class="points-form__input-group">
                 <label for="punktyMaturaPodstawowa">Matura rozszerzona: </label>
-                <input type="number" class="pointsForm__input" id="punktyMaturaRozszerzona" name="punktyMaturaRozszerzona" value="punktyMaturaRozszerzona" min="0" max="100" placeholder="Ilość %">
-            </div>
-            
-            <div class="pointsForm__inputGroup">
-                <p class="pointsForm__universityName">Nazwa uczelni:</p>
-                <div class="inputGroup__radioButton">
-                    <input type="radio" id="agh" class="radioButton__input pointsForm__input" value="agh" name="university">
-                    <label for="agh">AGH</label>
-                </div>
-                <div class="inputGroup__radioButton">
-                    <input type="radio" id="politechnika" class="radioButton__input pointsForm__input" value="pk" name="university">
-                    <label for="politechnika">Politechnika Krakowska</label>
-                </div>
+                <input type="number" class="points-form__input" id="punktyMaturaRozszerzona" name="punktyMaturaRozszerzona" min="0" max="100" placeholder="Ilość %">
             </div>
 
-            <button type="submit" class="pointsForm__button">Sprawdź</button>
+            <button type="submit" class="points-form__button">Sprawdź</button>
         </form>
+        <div class="result">
+            <h2 class="result__text"></h2>
+        </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
