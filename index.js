@@ -3,13 +3,13 @@
 let pointsForm = document.forms.points;
 
 pointsForm.addEventListener('submit', (event) => {
-    countPoints('.result__text');
+    countPoints();
     event.preventDefault();
 });
 
-function countPoints(selector) {
-    let basicExamPoints = +pointsForm.punktyMaturaPodstawowa.value;
-    let extendedExamPoints = +pointsForm.punktyMaturaRozszerzona.value;
+function countPoints(selector = '.result__text') {
+    let basicExamPoints = +pointsForm.basicExam.value;
+    let extendedExamPoints = +pointsForm.extendedExam.value;
     let pkRecrutationPoints;
     let aghRecrutationPoints;
 
