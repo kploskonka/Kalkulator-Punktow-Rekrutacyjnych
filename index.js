@@ -28,5 +28,5 @@ function countPoints(selector = '.result__text') {
         aghRecrutationPoints = 4 * (extendedExamPoints + 100) + 2 * basicExamPoints;
     }
 
-    document.querySelector(selector).innerHTML = `Twoje punkty: AGH: ${aghRecrutationPoints} PK: ${pkRecrutationPoints}`;
+    document.querySelector(selector).innerHTML = `AGH: ${aghRecrutationPoints} PK: ${pkRecrutationPoints}`;
 }

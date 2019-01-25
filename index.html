@@ -4,28 +4,48 @@
     <meta charset="UTF-8">
     <title>Kalkulator punktów rekrutacyjnych</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
 
-        <h1 class="title">Kalkulator punktów rekrutacyjnych</h1>
+        <div class="calculator">
+            <h1 class="title">Kalkulator punktów rekrutacyjnych</h1>
 
-        <form method="get" class="points-form" name="points">
-            <div class="points-form__input-group">
-                <label for="basic-exam-points">Matura podstawowa: </label>
-                <input type="number" class="points-form__input" id="basic-exam-points" name="basicExam" min="0" max="100" placeholder="Ilość %" required>
+            <form method="get" class="points-form" name="points">
+
+                <div class="points-form__input-group">
+                    <div class="group-left">
+                        <label for="basic-exam-points">Matura podstawowa: </label>
+                    </div>
+                    <div class="group-right">
+                        <input type="number" class="points-form__input" id="basic-exam-points" name="basicExam" min="0" max="100" placeholder="Ilość %" required>
+                    </div>
+
+                </div>
+
+                <div class="points-form__input-group">
+                    <div class="group-left">
+                        <label for="extended-exam-points">Matura rozszerzona: </label>
+                    </div>
+                    <div class="group-right">
+                        <input type="number" class="points-form__input" id="extended-exam-points" name="extendedExam" min="0" max="100" placeholder="Ilość %">
+                    </div>
+                </div>
+                <div class="group-center">
+                    <button type="submit" class="points-form__button">Sprawdź</button>
+                </div>
+            </form>
+
+            <div class="result">
+                <h2 class="result__text"></h2>
             </div>
 
-            <div class="points-form__input-group">
-                <label for="extended-exam-points">Matura rozszerzona: </label>
-                <input type="number" class="points-form__input" id="extended-exam-points" name="extendedExam" min="0" max="100" placeholder="Ilość %">
-            </div>
-
-            <button type="submit" class="points-form__button">Sprawdź</button>
-        </form>
-        <div class="result">
-            <h2 class="result__text"></h2>
         </div>
+        <footer class="footer">
+            <p class="footer__text">Katarzyna Płoskonka &copy; 2019</p>
+        </footer>
     </div>
     <script src="index.js"></script>
 </body>
