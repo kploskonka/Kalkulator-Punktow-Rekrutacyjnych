@@ -7,5 +7,7 @@ Wprowadzenie wyników z matury podstawowej i rozszerzonej z matematyki pozwala n
 * [Akademia Górniczo-Hutnicza im. S. Staszica](https://kandydaci.agh.edu.pl/rekrutacja/warunki-i-tryb-rekrutacji-na-studia-w-agh/)
 * [Politechnika Krakowska im. T. Kościuszki](http://rekrutacja.pk.edu.pl/index.php/zasady-rekrutacji-2019-20)
 
+##Link
+https://kaska0505.github.io/Recrutation-Points-Calculator/
 ___
 Katarzyna Płoskonka &copy; 2019
