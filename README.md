@@ -8,6 +8,6 @@ Wprowadzenie wyników z matury podstawowej i rozszerzonej z matematyki pozwala n
 * [Politechnika Krakowska im. T. Kościuszki](http://rekrutacja.pk.edu.pl/index.php/zasady-rekrutacji-2019-20)
 
 ## Link
-https://kaska0505.github.io/Recrutation-Points-Calculator/
+https://kaska0505.github.io/Kalkulator-Punktow-Rekrutacyjnych/
 ___
 Katarzyna Płoskonka &copy; 2019
